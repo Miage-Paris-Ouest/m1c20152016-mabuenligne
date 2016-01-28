@@ -1,6 +1,6 @@
 # Projet "Ma BU en ligne" #
 
-[![Build Status](https://travis-ci.org/Miage-Paris-Ouest/m1c20152016-mabuenligne)](https://travis-ci.org/Miage-Paris-Ouest/m1c20152016-mabuenligne)
+[![Build Status](https://travis-ci.org/Miage-Paris-Ouest/m1c20152016-mabuenligne.svg?branch=master)](https://travis-ci.org/Miage-Paris-Ouest/m1c20152016-mabuenligne)
 ### Contexte:###
 
 La bibliothèque universitaire souhaite intégrer la mobilité au sein de son processus d'emprunt de livres. Pour se faire une application mobile devra être développée afin de donner la possibilité aux utilisateurs de gérer leurs emprunts à distance.
