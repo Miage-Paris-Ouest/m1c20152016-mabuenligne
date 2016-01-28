@@ -8,31 +8,27 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
-
-    RelativeLayout layout = null;
-    TextView monTexte = null;
-
+public class MenuVisiteur extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_menu_visiteur);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        Button boutonVisiteur = (Button) findViewById(R.id.boutonVisiteur);
+        Button boutonIC = (Button) findViewById(R.id.boutonIC);
 
-        boutonVisiteur.setOnClickListener(new View.OnClickListener() {
+        boutonIC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, MenuVisiteur.class);
+                Intent intent = new Intent(MenuVisiteur.this, InfosContacts.class);
                 startActivity(intent);
+
             }
         });
 
     }
+
 }

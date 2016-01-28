@@ -9,19 +9,16 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.alex.onlinebu.MainActivity"
-    tools:showIn="@layout/activity_main"
-    android:background="@drawable/univ"
-    android:id="@+id/layout"
-    android:backgroundTintMode="src_in">
-
+    tools:context="com.example.alex.onlinebu.MenuVisiteur"
+    android:background="@drawable/biblio"
+    tools:showIn="@layout/activity_menu_visiteur">
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Visiteur"
-        android:id="@+id/boutonVisiteur"
-        android:layout_marginTop="155dp"
+        android:text="Infos et Contacts"
+        android:id="@+id/boutonIC"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="169dp" />
 </RelativeLayout>
