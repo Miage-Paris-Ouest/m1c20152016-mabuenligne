@@ -5,14 +5,16 @@ jdk:
 
 env:
   global:
-    - ADB_INSTALL_TIMEOUT=10 # minutes (2 minutes by default)
-
+    - ANDROID_TARGET=android-23
+    - ANDROID_ABI=armeabi-v7a
+    
 android:
   components:
     # Use the latest revision of Android SDK Tools
     - platform-tools
     - tools
-
+    
+    
     # The BuildTools version used by the project
     - build-tools-23.0.2
 
