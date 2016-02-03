@@ -19,11 +19,22 @@ public class MenuVisiteur extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         Button boutonIC = (Button) findViewById(R.id.boutonIC);
+        Button boutonRechercheLivre = (Button) findViewById(R.id.boutonRechercheLivre);
 
         boutonIC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MenuVisiteur.this, InfosContacts.class);
+                startActivity(intent);
+
+
+            }
+        });
+
+        boutonRechercheLivre.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuVisiteur.this, RechercheLivre.class);
                 startActivity(intent);
 
             }

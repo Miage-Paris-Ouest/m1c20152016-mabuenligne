@@ -1,50 +1,18 @@
 language: android
-
-jdk:
-  - oraclejdk8
-
+jdk: oraclejdk8
 env:
   global:
-    - ADB_INSTALL_TIMEOUT=10 # minutes (2 minutes by default)
-
+    - ANDROID_TARGET=android-23
+    - ANDROID_ABI=armeabi-v7a
 android:
   components:
-    # Use the latest revision of Android SDK Tools
-    - platform-tools
-    - tools
-
-    # The BuildTools version used by the project
-    - build-tools-23.0.0
-
-    # The SDK version used to compile the project
-    - android-23
-
-    # Repositories for Gradle and Maven
-    - extra-android-m2repository
-    - extra-google-m2repository
-
-    # Additional components
-    - extra-android-support
-    - extra-google-google_play_services
-
-    # Marshmallow emulators
-    #- addon-google_apis-google-23 # Google APIs for Marshmallow, use with sys-img-armeabi-v7a-addon-google_apis-google-23
-    #- sys-img-armeabi-v7a-addon-google_apis-google-23 # System image, requires android-23 and addon-google_apis-google-23, provides Google APIs
-    #- sys-img-armeabi-v7a-android-23 # System image, requires android-23
-
-    # KitKat emulators
-    - android-19
-    - addon-google_apis-google-19 # System image, requires android-19, provides Google APIs
-    #- sys-img-armeabi-v7a-android-19 # System image, requires android-19
-
-  # Licenses are automatically accepted by Travis CI
-  licenses:
-    #- 'android-sdk-license-.+'
-    #- 'google-gdk-license-.+'
-
-
-notifications:
-  email: false
-
+  - tools
+  - platform-tools
+  - build-tools-23.0.2
+  - android-23
+  - extra-android-m2repository
+  - sys-img-${ANDROID_ABI}-${ANDROID_TARGET}
 script:
-  - ./gradlew clean build
+  - ./gradlew build assembleAndroidTest
+
+

@@ -26,6 +26,10 @@
             android:name=".InfosContacts"
             android:label="Informations et Contacts"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RechercheLivre"
+            android:label="@string/title_activity_recherche_livre"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
