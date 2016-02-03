@@ -51,7 +51,7 @@ La bibliothèque universitaire souhaite intégrer la mobilité au sein de son pr
 ### Use Case ###
 
 
-![](https://github.com/Miage-Paris-Ouest/m1c20152016-mabuenligne/blob/master/Dossier%20Fonctionnel/Cas%20d'utilisation%20Lecteur.png?raw=true)
+![](https://github.com/Miage-Paris-Ouest/m1c20152016-mabuenligne/blob/master/Dossier%20Fonctionnel/use_case.jpg?raw=true)
 
 ### Choix technique ###
 
