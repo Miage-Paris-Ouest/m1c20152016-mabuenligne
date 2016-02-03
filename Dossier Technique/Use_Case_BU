@@ -1,0 +1,14 @@
+@startuml
+left to right direction
+:Utilisateur:
+:Lecteur:
+
+rectangle utilisation{
+Utilisateur -> (Recherche livre)
+Utilisateur -> (Consultation contact/info)
+Lecteur -> (Consultation des retards)
+Lecteur -> (Consultation des emprunts)
+Lecteur -> (Parametrage des alertes)
+}
+Utilisateur <|-- Lecteur
+@enduml

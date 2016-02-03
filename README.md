@@ -1,4 +1,6 @@
 # Projet "Ma BU en ligne" #
+
+[![Build Status](https://travis-ci.org/Miage-Paris-Ouest/m1c20152016-mabuenligne.svg?branch=master)](https://travis-ci.org/Miage-Paris-Ouest/m1c20152016-mabuenligne)
 ### Contexte:###
 
 La bibliothèque universitaire souhaite intégrer la mobilité au sein de son processus d'emprunt de livres. Pour se faire une application mobile devra être développée afin de donner la possibilité aux utilisateurs de gérer leurs emprunts à distance.
@@ -50,3 +52,20 @@ La bibliothèque universitaire souhaite intégrer la mobilité au sein de son pr
 
 Développement mobile : Android
  
+ -----------------------------------
+
+### Processus de développement ###
+
+- Creation de la page d'infos et contact
+- Creation de la page accueil avec un seul bouton(utilisateur)
+- Creation de la page utilisateur avec un seul bouton(infos&contact)
+- Ajout d'un second bouton a la page utilisateur(recherche livre)
+- Développement de la fonction de recherche(avec développement d'une page de réponse vide ou non)
+- Creation page lecteur avec 2 boutons(recherche et infos&contact)
+- Creation page de connexion avec 2 boutons(connexion et menu)
+- Développement de la fonction de connexion
+- Ajout d'un second bouton à la page d'accueil(connexion)
+- Ajout 3 boutons page lecteur 
+- Développement fonction historique d'emprunt
+- Développement fonction d'alerte de rendus
+- Développement fonction retard 

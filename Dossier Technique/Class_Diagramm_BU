@@ -1,0 +1,27 @@
+@startuml
+
+abstract class Visiteur
+class Lecteur
+class Livre
+class Retard
+class Alerte
+class Emprunt
+
+abstract class Visiteur{
++recherche_Livre : Livre ()
++consultation_Info : void ()
+}
+
+class Lecteur {
++consultation_Retards : Retard ()
++consultation_Emprunts : Emprunt ()
++parametrage_Alertes : Alerte ()
+}
+Lecteur "0"*.. "many" Retard : containts
+Lecteur "0"*.. "many" Emprunt : containts
+Lecteur "0"*.. "many" Alerte : containts
+Emprunt "1"*.. "many" Livre : containts
+Livre -- Visiteur
+Visiteur ..|> Lecteur
+
+@enduml
