@@ -34,7 +34,7 @@ public class MenuVisiteur extends AppCompatActivity {
         boutonRechercheLivre.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MenuVisiteur.this, RechercheLivre.class);
+                Intent intent = new Intent(MenuVisiteur.this, CritereRechercheLivres.class);
                 startActivity(intent);
 
             }

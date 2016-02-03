@@ -18,6 +18,11 @@ public class RechercheLivre extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        String titre =  this.getIntent().getStringExtra("TITRE");
+        String auteur =  this.getIntent().getStringExtra("AUTEUR");
+        String theme =  this.getIntent().getStringExtra("THEME");
+
+
         String[] infosStrings = {
                 "\nTitre: Au bonheur des dames \n Auteur: Emile Zola",
                 "Titre: Harry Potter L'ordre du Phénix \n Auteur: J.K Roling",

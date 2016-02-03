@@ -29,7 +29,11 @@
         <activity
             android:name=".RechercheLivre"
             android:label="Rechercher un livre"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CritereRechercheLivres"
+            android:label="Formulaire de recherche"
+        />
     </application>
 
 </manifest>
