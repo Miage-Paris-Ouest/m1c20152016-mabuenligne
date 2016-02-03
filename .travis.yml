@@ -4,6 +4,7 @@ env:
   global:
     - ANDROID_TARGET=android-23
     - ANDROID_ABI=armeabi-v7a
+<<<<<<< HEAD
 android:
   components:
   - tools
@@ -14,5 +15,33 @@ android:
   - sys-img-${ANDROID_ABI}-${ANDROID_TARGET}
 script:
   - ./gradlew build assembleAndroidTest
+=======
+    
+android:
+  components:
+    # Use the latest revision of Android SDK Tools
+    - platform-tools
+    - tools
+    
+    
+    # The BuildTools version used by the project
+    - build-tools-23.0.2
+
+    # The SDK version used to compile the project
+    - android-23
+
+    # Repositories for Gradle and Maven
+    - extra-android-m2repository
+    - extra-google-m2repository
+     - sys-img-${ANDROID_ABI}-${ANDROID_TARGET}
+>>>>>>> origin/master
 
 
+<<<<<<< HEAD
+=======
+before_install:
+ - chmod +x gradlew
+ 
+script:
+  - ./gradlew clean build
+>>>>>>> origin/master

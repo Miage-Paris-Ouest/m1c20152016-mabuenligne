@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/OnlineBU.iml" filepath="$PROJECT_DIR$/OnlineBU.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m1c20152016-mabuenligne.iml" filepath="$PROJECT_DIR$/m1c20152016-mabuenligne.iml" />
     </modules>
   </component>
 </project>

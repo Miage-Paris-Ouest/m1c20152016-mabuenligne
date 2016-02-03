@@ -28,7 +28,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".RechercheLivre"
-            android:label="@string/title_activity_recherche_livre"
+            android:label="Rechercher un livre"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
