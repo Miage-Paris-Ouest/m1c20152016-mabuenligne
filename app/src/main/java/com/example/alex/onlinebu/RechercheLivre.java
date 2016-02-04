@@ -9,6 +9,16 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+
+import static java.lang.System.*;
+
 public class RechercheLivre extends AppCompatActivity {
 
     @Override
@@ -21,6 +31,35 @@ public class RechercheLivre extends AppCompatActivity {
         String titre =  this.getIntent().getStringExtra("TITRE");
         String auteur =  this.getIntent().getStringExtra("AUTEUR");
         String theme =  this.getIntent().getStringExtra("THEME");
+
+
+
+
+            /*TEST ACCES AUX DONNEES D UN FICHIER POUR LES AJOUTER DANS LES LISTVIEW
+
+        String filePath = "C:\\Users\\Alex\\Documents\\GitHub\\m1c20152016-mabuenligne\\donnéesLivres.txt";
+        InputStream ips = null;
+        try {
+            ips = new FileInputStream(filePath);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        InputStreamReader ipsr= new InputStreamReader(ips);
+        BufferedReader br = new BufferedReader(ipsr);
+
+        String ligne;
+        try {
+            while((ligne=br.readLine())!=null){
+                int i =0;
+                //ton traitement par exemple ici avec ton fichier csv
+                String str[] =ligne.split("/");
+                System.out.println(str[i]);
+                i++;
+    // chaque valeur du tableau str est une valeur de ta ligne ex: str[0]=M392060... Comme ça tu peux faire les traitements que tu veux
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }*/
 
 
         String[] infosStrings = {
