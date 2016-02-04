@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         Button boutonVisiteur = (Button) findViewById(R.id.boutonVisiteur);
+        Button buttonLecteur = (Button) findViewById(R.id.boutonLecteur);
 
         boutonVisiteur.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,6 +34,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        buttonLecteur.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(MainActivity.this, LoginLecteur.class);
+                startActivity(intent);
+            }
+        });
     }
 }

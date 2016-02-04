@@ -33,8 +33,5 @@ public class InfosContacts extends AppCompatActivity {
         ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, contactsStrings);
         ListView listContacts = (ListView)findViewById(R.id.listViewContacts);
         listContacts.setAdapter(adapter2);
-
-
     }
-
 }
