@@ -40,7 +40,11 @@
             android:label="Formulaire de recherche" />
         <activity
             android:name=".LoginLecteur"
-            android:label="@string/title_activity_login_lecteur"></activity>
+            android:label="Identification" />
+        <activity
+            android:name=".Emprunts"
+            android:label="Mes Emprunts">
+        </activity>
     </application>
 
 </manifest>
