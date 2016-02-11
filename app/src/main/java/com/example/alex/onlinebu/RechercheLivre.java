@@ -1,5 +1,6 @@
 package com.example.alex.onlinebu;
 
+import android.app.Notification;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -60,6 +61,14 @@ public class RechercheLivre extends AppCompatActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }*/
+
+        Notification.Builder builder = new Notification.Builder(this)
+                .setWhen(System.currentTimeMillis())
+                .setTicker("emprunt")
+                .setSmallIcon(R.drawable.livre)
+                .setContentTitle("Alerte emprunt")
+                .setContentText("vous avez un livre à rendre");
+
 
 
         String[] infosStrings = {

@@ -3,6 +3,7 @@ package com.example.alex.onlinebu;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
@@ -87,6 +88,7 @@ public class LoginLecteur extends AppCompatActivity implements LoaderCallbacks<C
             @Override
             public void onClick(View view) {
                 attemptLogin();
+
             }
         });
 
@@ -184,8 +186,11 @@ public class LoginLecteur extends AppCompatActivity implements LoaderCallbacks<C
             // Show a progress spinner, and kick off a background task to
             // perform the user login attempt.
             showProgress(true);
-            mAuthTask = new UserLoginTask(numEtu, password);
-            mAuthTask.execute((Void) null);
+            /*mAuthTask = new UserLoginTask(numEtu, password);
+            mAuthTask.execute((Void) null);*/
+            Intent intent = new Intent(LoginLecteur.this, Emprunts.class);
+            intent.putExtra("USER",mNumEtuView.getText().toString());
+            startActivity(intent);
         }
     }
 
