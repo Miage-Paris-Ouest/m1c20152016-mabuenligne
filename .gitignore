@@ -7,3 +7,10 @@
 /build
 /captures
 .idea/
+.idea/compiler.xml
+.idea/misc.xml
+.idea/encodings.xml
+.idea/runConfigurations.xml
+.idea/gradle.xml
+.idea/modules.xml
+.idea/vcs.xml
