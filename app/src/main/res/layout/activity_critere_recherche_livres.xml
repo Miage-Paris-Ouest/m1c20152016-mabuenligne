@@ -88,6 +88,6 @@
         android:text="Lancer la recherche"
         android:id="@+id/buttonRecherche"
         android:layout_below="@+id/editTextThemeLivre"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="46dp" />
+        android:layout_alignLeft="@+id/textViewCriteres"
+        android:layout_alignStart="@+id/textViewCriteres" />
 </RelativeLayout>

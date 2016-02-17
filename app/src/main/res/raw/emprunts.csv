@@ -1,2 +1,4 @@
-Numero_Emprunt;Livre;Date_Debut;Date_Retour;Patron_ID;
-0001;Langage_Android;11/02/2016;17/02/2016;1548453;
+Livre: Langage_Android Date_Emprunt: 11/02/2016 Date_Retour: 17/02/2016
+Livre: Les misérables  Date_Emprunt: 01/01/2016 Date_Retour: 01/03/2016
+Livre: Langage C Tuto  Date_Emprunt: 10/02/2016 Date_Retour: 21/03/2016
+Livre: Les Ressources Humaines Date_Emprunt: 15/02/2016 Date_Retour: 19/04/2016
