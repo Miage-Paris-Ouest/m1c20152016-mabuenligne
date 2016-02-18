@@ -3,7 +3,7 @@ package XML;
 /**
  * Created by Pierre Alline on 17/02/2016.
  */
-import org.apache.http.*;
+//import org.apache.http.*;
 import java.io.*;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -33,7 +33,7 @@ public class XMLParser {
      * */
     public String getXmlFromUrl(String url) {
         String xml = null;
-
+/*
         try {
             // defaultHttpClient
             DefaultHttpClient httpClient = new DefaultHttpClient();
@@ -49,7 +49,7 @@ public class XMLParser {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
         // return XML
         return xml;
     }

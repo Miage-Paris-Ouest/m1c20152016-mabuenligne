@@ -83,11 +83,13 @@
         android:layout_alignParentEnd="true" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="Lancer la recherche"
         android:id="@+id/buttonRecherche"
+        android:background="#eea209"
         android:layout_below="@+id/editTextThemeLivre"
         android:layout_alignLeft="@+id/textViewCriteres"
-        android:layout_alignStart="@+id/textViewCriteres" />
+        android:layout_alignStart="@+id/textViewCriteres"
+        android:textColor="#ffffff" />
 </RelativeLayout>

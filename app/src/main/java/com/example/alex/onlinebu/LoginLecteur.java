@@ -188,6 +188,8 @@ public class LoginLecteur extends AppCompatActivity implements LoaderCallbacks<C
             showProgress(true);
             /*mAuthTask = new UserLoginTask(numEtu, password);
             mAuthTask.execute((Void) null);*/
+
+
             Intent intent = new Intent(LoginLecteur.this, Emprunts.class);
             intent.putExtra("USER",mNumEtuView.getText().toString());
             startActivity(intent);

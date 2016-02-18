@@ -39,17 +39,13 @@ public class Emprunts extends AppCompatActivity {
         TextView textUser = (TextView)findViewById(R.id.textViewEmprunts);
         ListView listEmprunts = (ListView)findViewById(R.id.listViewEmprunts);
 
-
         textUser.setText("Emprunts de " + user);
-
 
         InputStream inputStream = getResources().openRawResource(R.raw.emprunts);
         InputStreamReader ipsr = new InputStreamReader(inputStream);
         BufferedReader br = new BufferedReader(ipsr);
 
         String[] emprunt = new String[0];
-
-
 
         String ligne;
         try {
@@ -74,8 +70,6 @@ public class Emprunts extends AppCompatActivity {
             e.printStackTrace();
         }
 
-
-
         /*
         String[] emprunts = {"Livre: Les misérables\n Date Emprunt: 01/01/2016\n Date Retour: 01/03/2016",
                                     "Livre: Langage C\n Date Emprunt: 10/02/2016\n Date Retour: 21/03/2016",
@@ -87,6 +81,43 @@ public class Emprunts extends AppCompatActivity {
         ListView listEmprunts = (ListView)findViewById(R.id.listViewEmprunts);
         listEmprunts.setAdapter(adapter);*/
 
+
+        listEmprunts.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> adapterView,
+                                           View view,
+                                           int position,
+                                           long id) {
+
+                AlertDialog.Builder builderPenalite = new AlertDialog.Builder(Emprunts.this);
+                builderPenalite.setMessage("Pénalités sur les emprunts en retard");
+                builderPenalite.setTitle("VOIR MES PENALITES");
+
+                builderPenalite.setPositiveButton("OK",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int whichButton)
+                            {
+                                Intent intent = new Intent(Emprunts.this, Penalites.class);
+                                startActivity(intent);
+
+                            }
+
+                        });
+
+                builderPenalite.setNegativeButton("Annuler",
+                        new DialogInterface.OnClickListener() {
+
+                            public void onClick(DialogInterface dialog, int whichButton) {
+                            }
+
+                        });
+
+                builderPenalite.show();
+
+                return true;
+            }
+        });
+
         listEmprunts.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView,
@@ -95,7 +126,7 @@ public class Emprunts extends AppCompatActivity {
                                     long id) {
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(Emprunts.this);
-                builder.setMessage("Saisir la durée avant alerte (en sec)");
+                builder.setMessage("Saisir la durée avant déclenchement (en sec)");
                 builder.setTitle("PARAMETRER UNE ALERTE");
 
                 final EditText dureeChoisie = new EditText(Emprunts.this);
@@ -113,14 +144,10 @@ public class Emprunts extends AppCompatActivity {
                                 int duree =Integer.parseInt(dureeAlerte);
                                 Intent intent = new Intent(Emprunts.this, TimerNotif.class);
 
-                                //intent.putExtra("Alerte",duree);
                                 PendingIntent pendingIntent = PendingIntent.getBroadcast(getApplicationContext(), 1,intent, PendingIntent.FLAG_ONE_SHOT);
-
 
                                 AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
                                 alarmManager.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis() + (1000 * duree), pendingIntent);
-
-
                             }
 
                         });

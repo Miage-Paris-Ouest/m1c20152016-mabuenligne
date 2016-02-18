@@ -14,20 +14,24 @@
     tools:showIn="@layout/activity_menu_visiteur">
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="Infos et Contacts"
         android:id="@+id/boutonIC"
+        android:background="#eea209"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="169dp" />
+        android:layout_marginTop="169dp"
+        android:textColor="#ffffff" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="Rechercher un livre"
         android:id="@+id/boutonRechercheLivre"
+        android:background="#eea209"
         android:layout_marginTop="69dp"
         android:layout_below="@+id/boutonIC"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff" />
 </RelativeLayout>
