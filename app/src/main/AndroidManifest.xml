@@ -53,6 +53,9 @@
         <activity
             android:name=".Penalites"
             android:label="Mes Pénalités"></activity>
+        <activity
+            android:name=".EmpruntsXML"
+            android:label="Emprunts XML"></activity>
     </application>
 
 </manifest>
