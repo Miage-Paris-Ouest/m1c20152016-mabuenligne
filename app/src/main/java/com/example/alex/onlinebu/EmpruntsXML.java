@@ -10,7 +10,7 @@ import org.xmlpull.v1.XmlPullParserException;
 import java.io.IOException;
 import java.io.InputStream;
 
-import XML.XmlParser;
+import XML.XMLParser;
 import livre.Livre;
 
 /**
@@ -27,7 +27,7 @@ public class EmpruntsXML extends AppCompatActivity {
         ListView listEmprunts = (ListView)findViewById(R.id.listViewEmprunts);
 
         textUser.setText("Emprunts de " + user);
-        XmlParser XMl = new XmlParser();
+        XMLParser XMl = new XMLParser();
         Livre livre = new Livre();
         InputStream inputStream = getResources().openRawResource(R.raw.livre);
         //InputStreamReader ipsr = new InputStreamReader(inputStream);

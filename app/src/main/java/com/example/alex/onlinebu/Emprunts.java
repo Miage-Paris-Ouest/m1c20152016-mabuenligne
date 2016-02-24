@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -17,8 +18,10 @@ import android.widget.TextView;
 
 import org.xmlpull.v1.XmlPullParserException;
 
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 
 import XML.XMLParser;
 import livre.Livre;
@@ -35,35 +38,11 @@ public class Emprunts extends AppCompatActivity {
         ListView listEmprunts = (ListView)findViewById(R.id.listViewEmprunts);
 
         textUser.setText("Emprunts de " + user);
-<<<<<<< HEAD
-        XMLParser XMl = new XMLParser();
-        Livre livre = new Livre();
-        InputStream inputStream = getResources().openRawResource(R.raw.livre);
-        //InputStreamReader ipsr = new InputStreamReader(inputStream);
-        //BufferedReader br = new BufferedReader(ipsr);
-        try {
-=======
-        /*XmlParser XMl = new XmlParser();
-        Livre livre = new Livre();*/
         InputStream inputStream = getResources().openRawResource(R.raw.emprunts);
         InputStreamReader ipsr = new InputStreamReader(inputStream);
         BufferedReader br = new BufferedReader(ipsr);
-        /*try {
->>>>>>> origin/master
-            livre=XMl.parse(inputStream);
-        } catch (XmlPullParserException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-<<<<<<< HEAD
-        }
 
-
-        /*String[] emprunt = new String[0];
-=======
-        }*/
         String[] emprunt = new String[0];
->>>>>>> origin/master
 
         String ligne;
         try {
