@@ -31,7 +31,7 @@ import livre.Livre;
  * Given an InputStream representation of a feed, it returns a List of entries,
  * where each list element represents a single entry (post) in the XML feed.
  */
-public class XmlParser {
+public class XMLParser {
     private static final String ns = null;
 
     // We don't use namespaces

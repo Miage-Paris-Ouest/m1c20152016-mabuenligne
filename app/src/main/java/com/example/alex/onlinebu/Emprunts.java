@@ -2,19 +2,14 @@ package com.example.alex.onlinebu;
 
 import android.app.AlarmManager;
 import android.app.AlertDialog;
-import android.app.LauncherActivity;
-import android.app.Notification;
-import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -22,15 +17,10 @@ import android.widget.TextView;
 
 import org.xmlpull.v1.XmlPullParserException;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.util.HashMap;
 
-import XML.XmlParser;
+import XML.XMLParser;
 import livre.Livre;
 
 public class Emprunts extends AppCompatActivity {
@@ -45,19 +35,35 @@ public class Emprunts extends AppCompatActivity {
         ListView listEmprunts = (ListView)findViewById(R.id.listViewEmprunts);
 
         textUser.setText("Emprunts de " + user);
+<<<<<<< HEAD
+        XMLParser XMl = new XMLParser();
+        Livre livre = new Livre();
+        InputStream inputStream = getResources().openRawResource(R.raw.livre);
+        //InputStreamReader ipsr = new InputStreamReader(inputStream);
+        //BufferedReader br = new BufferedReader(ipsr);
+        try {
+=======
         /*XmlParser XMl = new XmlParser();
         Livre livre = new Livre();*/
         InputStream inputStream = getResources().openRawResource(R.raw.emprunts);
         InputStreamReader ipsr = new InputStreamReader(inputStream);
         BufferedReader br = new BufferedReader(ipsr);
         /*try {
+>>>>>>> origin/master
             livre=XMl.parse(inputStream);
         } catch (XmlPullParserException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
+<<<<<<< HEAD
+        }
+
+
+        /*String[] emprunt = new String[0];
+=======
         }*/
         String[] emprunt = new String[0];
+>>>>>>> origin/master
 
         String ligne;
         try {
