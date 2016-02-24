@@ -1,0 +1,145 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<get-pat-loan>
+    <reply-text>ok</reply-text>
+    <reply-code>0000</reply-code>
+    <loan renew="N">
+        <z30-collection-code>SEGMI</z30-collection-code>
+        <z30-item-status-code>03</z30-item-status-code>
+        <z30-item-process-status-code></z30-item-process-status-code>
+        <z30><translate-change-active-library>NAN51</translate-change-active-library>
+            <z30-doc-number>000555632</z30-doc-number>
+            <z30-item-sequence>2.0</z30-item-sequence>
+            <z30-barcode>9710071666</z30-barcode>
+            <z30-sub-library>BUFR SEGMI</z30-sub-library>
+            <z30-material>Livre</z30-material>
+            <z30-item-status>empruntable</z30-item-status>
+            <z30-open-date>20140717</z30-open-date>
+            <z30-update-date>20140717</z30-update-date>
+            <z30-cataloger>DASILVA</z30-cataloger>
+            <z30-date-last-return>20160212</z30-date-last-return>
+            <z30-hour-last-return>1748</z30-hour-last-return>
+            <z30-ip-last-return>10.25.132.5</z30-ip-last-return>
+            <z30-no-loans>008</z30-no-loans>
+            <z30-alpha>L</z30-alpha>
+            <z30-collection>BUFR - SEGMI</z30-collection>
+            <z30-call-no-type></z30-call-no-type>
+            <z30-call-no>51 MER</z30-call-no>
+            <z30-call-no-key>51 mer</z30-call-no-key>
+            <z30-call-no-2-type></z30-call-no-2-type>
+            <z30-call-no-2></z30-call-no-2>
+            <z30-call-no-2-key></z30-call-no-2-key>
+            <z30-description></z30-description>
+            <z30-note-opac></z30-note-opac>
+            <z30-note-circulation></z30-note-circulation>
+            <z30-note-internal></z30-note-internal>
+            <z30-order-number></z30-order-number>
+            <z30-inventory-number></z30-inventory-number>
+            <z30-inventory-number-date>00000000</z30-inventory-number-date>
+            <z30-last-shelf-report-date>00000000</z30-last-shelf-report-date>
+            <z30-price></z30-price>
+            <z30-shelf-report-number></z30-shelf-report-number>
+            <z30-on-shelf-date>00000000</z30-on-shelf-date>
+            <z30-on-shelf-seq>000000</z30-on-shelf-seq>
+            <z30-doc-number-2>000000000</z30-doc-number-2>
+            <z30-schedule-sequence-2>00000</z30-schedule-sequence-2>
+            <z30-copy-sequence-2>00000</z30-copy-sequence-2>
+            <z30-vendor-code></z30-vendor-code>
+            <z30-invoice-number></z30-invoice-number>
+            <z30-line-number>00000</z30-line-number>
+            <z30-pages></z30-pages>
+            <z30-issue-date>00000000</z30-issue-date>
+            <z30-expected-arrival-date>00000000</z30-expected-arrival-date>
+            <z30-arrival-date>00000000</z30-arrival-date>
+            <z30-item-statistic></z30-item-statistic>
+            <z30-item-process-status>Aucun traitement en cours</z30-item-process-status>
+            <z30-copy-id></z30-copy-id>
+            <z30-hol-doc-number>000000000</z30-hol-doc-number>
+            <z30-temp-location>No</z30-temp-location>
+            <z30-enumeration-a></z30-enumeration-a>
+            <z30-enumeration-b></z30-enumeration-b>
+            <z30-enumeration-c></z30-enumeration-c>
+            <z30-enumeration-d></z30-enumeration-d>
+            <z30-enumeration-e></z30-enumeration-e>
+            <z30-enumeration-f></z30-enumeration-f>
+            <z30-enumeration-g></z30-enumeration-g>
+            <z30-enumeration-h></z30-enumeration-h>
+            <z30-chronological-j></z30-chronological-j>
+            <z30-chronological-k></z30-chronological-k>
+            <z30-chronological-l></z30-chronological-l>
+            <z30-chronological-m></z30-chronological-m>
+            <z30-supp-index-o></z30-supp-index-o>
+            <z30-85x-type></z30-85x-type>
+            <z30-depository-id></z30-depository-id>
+            <z30-linking-number>000000000</z30-linking-number>
+            <z30-gap-indicator></z30-gap-indicator>
+            <z30-maintenance-count>008</z30-maintenance-count>
+            <z30-process-status-date>20140717</z30-process-status-date>
+        </z30>
+        <z36-sub-library-code>SEGMI</z36-sub-library-code>
+        <z36><translate-change-active-library>NAN51</translate-change-active-library>
+            <z36-doc-number>000555632</z36-doc-number>
+            <z36-item-sequence>000020</z36-item-sequence>
+            <z36-id>3589368</z36-id>
+            <z36-number>002265814</z36-number>
+            <z36-material>LIVRE</z36-material>
+            <z36-sub-library>BUFR SEGMI</z36-sub-library>
+            <z36-status>Active</z36-status>
+            <z36-loan-date>20160223</z36-loan-date>
+            <z36-loan-hour>1753</z36-loan-hour>
+            <z36-effective-due-date>00000000</z36-effective-due-date>
+            <z36-due-date>20160308</z36-due-date>
+            <z36-due-hour>1900</z36-due-hour>
+            <z36-returned-date>00000000</z36-returned-date>
+            <z36-returned-hour>0000</z36-returned-hour>
+            <z36-item-status>03</z36-item-status>
+            <z36-bor-status>Paris X - Etudiant Master (02)</z36-bor-status>
+            <z36-letter-number>0</z36-letter-number>
+            <z36-letter-date>00000000</z36-letter-date>
+            <z36-no-renewal>0</z36-no-renewal>
+            <z36-note-1></z36-note-1>
+            <z36-note-2></z36-note-2>
+            <z36-loan-cataloger-name>DASILVA</z36-loan-cataloger-name>
+            <z36-loan-cataloger-ip>10.25.132.5</z36-loan-cataloger-ip>
+            <z36-return-cataloger-name></z36-return-cataloger-name>
+            <z36-return-cataloger-ip></z36-return-cataloger-ip>
+            <z36-renew-cataloger-name></z36-renew-cataloger-name>
+            <z36-renew-cataloger-ip></z36-renew-cataloger-ip>
+            <z36-renew-mode></z36-renew-mode>
+            <z36-bor-type></z36-bor-type>
+            <z36-note-alpha></z36-note-alpha>
+            <z36-recall-date>00000000</z36-recall-date>
+            <z36-recall-due-date>00000000</z36-recall-due-date>
+            <z36-last-renew-date>00000000</z36-last-renew-date>
+            <z36-original-due-date>20160308</z36-original-due-date>
+            <z36-process-status></z36-process-status>
+            <z36-loan-type></z36-loan-type>
+            <z36-proxy-id></z36-proxy-id>
+            <z36-recall-type></z36-recall-type>
+            <z36-return-location></z36-return-location>
+            <z36-return-sub-location></z36-return-sub-location>
+            <z36-source></z36-source>
+            <z36-delivery-time></z36-delivery-time>
+            <z36-tail-time></z36-tail-time>
+        </z36>
+        <z13>
+            <translate-change-active-library>NAN51</translate-change-active-library>
+            <z13-doc-number>000555632</z13-doc-number>
+            <z13-year>2011</z13-year>
+            <z13-open-date>20140717</z13-open-date>
+            <z13-update-date>20140717</z13-update-date>
+            <z13-call-no-key></z13-call-no-key>
+            <z13-call-no-code></z13-call-no-code>
+            <z13-call-no></z13-call-no>
+            <z13-author-code>700 1</z13-author-code>
+            <z13-author>Merlin</z13-author>
+            <z13-title-code>2001</z13-title-code>
+            <z13-title>Méthod&apos;H</z13-title>
+            <z13-imprint-code>210</z13-imprint-code>
+            <z13-imprint>impr. 2011</z13-imprint>
+            <z13-isbn-issn-code>010</z13-isbn-issn-code>
+            <z13-isbn-issn>978-2-7298-5663-2</z13-isbn-issn>
+        </z13>
+        <fine></fine>
+        <renew-info>Renewal is not allowed.Latest due date is 08/03/16.</renew-info>
+    </loan>
+</get-pat-loan>
