@@ -33,6 +33,8 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
+import XML.DownloadFile;
+
 import static android.Manifest.permission.READ_CONTACTS;
 
 /**
@@ -189,7 +191,8 @@ public class LoginLecteur extends AppCompatActivity implements LoaderCallbacks<C
             /*mAuthTask = new UserLoginTask(numEtu, password);
             mAuthTask.execute((Void) null);*/
 
-
+            DownloadFile df = new DownloadFile();
+            df.DownloadFiles();
             Intent intent = new Intent(LoginLecteur.this, Emprunts.class);
             intent.putExtra("USER",mNumEtuView.getText().toString());
             startActivity(intent);
