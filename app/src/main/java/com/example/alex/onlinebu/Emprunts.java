@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -33,9 +34,10 @@ public class Emprunts extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_emprunts);
 
-        String user =  this.getIntent().getStringExtra("USER");
+        final String user =  this.getIntent().getStringExtra("USER");
         TextView textUser = (TextView)findViewById(R.id.textViewEmprunts);
         ListView listEmprunts = (ListView)findViewById(R.id.listViewEmprunts);
+        Button boutonEmpruntsXML = (Button) findViewById(R.id.boutonEmpruntsXML);
 
         textUser.setText("Emprunts de " + user);
         InputStream inputStream = getResources().openRawResource(R.raw.emprunts);
@@ -138,10 +140,10 @@ public class Emprunts extends AppCompatActivity {
 
                             public void onClick(DialogInterface dialog, int whichButton) {
                                 String dureeAlerte = dureeChoisie.getText().toString();
-                                int duree =Integer.parseInt(dureeAlerte);
+                                int duree = Integer.parseInt(dureeAlerte);
                                 Intent intent = new Intent(Emprunts.this, TimerNotif.class);
 
-                                PendingIntent pendingIntent = PendingIntent.getBroadcast(getApplicationContext(), 1,intent, PendingIntent.FLAG_ONE_SHOT);
+                                PendingIntent pendingIntent = PendingIntent.getBroadcast(getApplicationContext(), 1, intent, PendingIntent.FLAG_ONE_SHOT);
 
                                 AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
                                 alarmManager.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis() + (1000 * duree), pendingIntent);
@@ -151,6 +153,16 @@ public class Emprunts extends AppCompatActivity {
                 builder.show();
 
 
+            }
+        });
+
+        boutonEmpruntsXML.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(Emprunts.this, EmpruntsXML.class);
+                intent.putExtra("USER", user);
+                startActivity(intent);
             }
         });
 
