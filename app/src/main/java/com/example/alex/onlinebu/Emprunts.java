@@ -20,6 +20,8 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import org.xmlpull.v1.XmlPullParserException;
+
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -27,6 +29,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.HashMap;
+
+import XML.XmlParser;
+import livre.Livre;
 
 public class Emprunts extends AppCompatActivity {
 
@@ -40,12 +45,19 @@ public class Emprunts extends AppCompatActivity {
         ListView listEmprunts = (ListView)findViewById(R.id.listViewEmprunts);
 
         textUser.setText("Emprunts de " + user);
-
-        InputStream inputStream = getResources().openRawResource(R.raw.emprunts);
-        InputStreamReader ipsr = new InputStreamReader(inputStream);
-        BufferedReader br = new BufferedReader(ipsr);
-
-        String[] emprunt = new String[0];
+        XmlParser XMl = new XmlParser();
+        Livre livre = new Livre();
+        InputStream inputStream = getResources().openRawResource(R.raw.livre);
+        //InputStreamReader ipsr = new InputStreamReader(inputStream);
+        //BufferedReader br = new BufferedReader(ipsr);
+        try {
+            livre=XMl.parse(inputStream);
+        } catch (XmlPullParserException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        /*String[] emprunt = new String[0];
 
         String ligne;
         try {
@@ -68,7 +80,7 @@ public class Emprunts extends AppCompatActivity {
             br.close();
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
 
         /*
         String[] emprunts = {"Livre: Les misérables\n Date Emprunt: 01/01/2016\n Date Retour: 01/03/2016",
