@@ -45,19 +45,19 @@ public class Emprunts extends AppCompatActivity {
         ListView listEmprunts = (ListView)findViewById(R.id.listViewEmprunts);
 
         textUser.setText("Emprunts de " + user);
-        XmlParser XMl = new XmlParser();
-        Livre livre = new Livre();
-        InputStream inputStream = getResources().openRawResource(R.raw.livre);
-        //InputStreamReader ipsr = new InputStreamReader(inputStream);
-        //BufferedReader br = new BufferedReader(ipsr);
-        try {
+        /*XmlParser XMl = new XmlParser();
+        Livre livre = new Livre();*/
+        InputStream inputStream = getResources().openRawResource(R.raw.emprunts);
+        InputStreamReader ipsr = new InputStreamReader(inputStream);
+        BufferedReader br = new BufferedReader(ipsr);
+        /*try {
             livre=XMl.parse(inputStream);
         } catch (XmlPullParserException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-        }
-        /*String[] emprunt = new String[0];
+        }*/
+        String[] emprunt = new String[0];
 
         String ligne;
         try {
@@ -80,7 +80,7 @@ public class Emprunts extends AppCompatActivity {
             br.close();
         } catch (IOException e) {
             e.printStackTrace();
-        }*/
+        }
 
         /*
         String[] emprunts = {"Livre: Les misérables\n Date Emprunt: 01/01/2016\n Date Retour: 01/03/2016",
