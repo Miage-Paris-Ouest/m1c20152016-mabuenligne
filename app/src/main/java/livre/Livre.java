@@ -52,4 +52,14 @@ public class Livre {
     public void setDate_retour(String date_retour) {
         this.date_retour = date_retour;
     }
+
+    @Override
+    public String toString() {
+        return nom + " de " +
+                ", auteur='" + auteur + '\'' +
+                ", date_parution='" + date_parution + '\'' +
+                ", numero_etu='" + numero_etu + '\'' +
+                ", date_retour='" + date_retour + '\'' +
+                '}';
+    }
 }

@@ -39,7 +39,8 @@ public class EmpruntsXML extends AppCompatActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        
+        TextView livreUser = (TextView)findViewById(R.id.Livre);
+        livreUser.setText(livre.toString());
 
     }
 }
