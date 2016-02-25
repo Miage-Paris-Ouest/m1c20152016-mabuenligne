@@ -12,5 +12,9 @@ android:
   - android-23
   - extra-android-m2repository
   - sys-img-${ANDROID_ABI}-${ANDROID_TARGET}
+
+before_install:
+ - chmod +x gradlew
+
 script:
   - ./gradlew build assembleAndroidTest
