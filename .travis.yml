@@ -36,6 +36,12 @@ android:
 
 before_install:
  - chmod +x gradlew
+
+android {
+      lintOptions {
+          abortOnError false
+      }
+  }
  
 script:
   - ./gradlew clean build
