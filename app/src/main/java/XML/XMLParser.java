@@ -43,7 +43,7 @@ public class XMLParser {
             parser.setInput(in, null);
             parser.nextTag();
             return readFeed(parser);
-        } finally {
+        }finally {
             in.close();
         }
     }
@@ -75,15 +75,17 @@ public class XMLParser {
             }
             String name = parser.getName();
             // Starts by looking for the entry tag
-            if (name.equals("z13")) {
+            if (name.equals("z36")) {
+            livre =readz36(parser, livre);
+            }
+            else if (name.equals("z13")) {
                 livre =readz13(parser,livre);
             }
-            if (name.equals("z36")) {
-                livre =readz36(parser, livre);
-            } else {
+            else {
                 skip(parser);
             }
         }
+
         return livre;
     }
 
@@ -97,12 +99,15 @@ public class XMLParser {
             // Starts by looking for the z13 tag
             if (name.equals("z13-author")) {
                 livre.setAuteur(readz13autor(parser));
+                parser.nextTag();
             }
-            if (name.equals("z13-title")) {
+            else if (name.equals("z13-title")) {
                 livre.setNom(readz13title(parser));
+                parser.nextTag();
             }
-            if (name.equals("z13-imprint")) {
+            else if (name.equals("z13-imprint")) {
                 livre.setDate_parution(readz13paru(parser));
+                parser.nextTag();
             }else {
                 skip(parser);
             }
@@ -135,6 +140,7 @@ public class XMLParser {
 
     private Livre readz36(XmlPullParser parser,Livre livre) throws IOException, XmlPullParserException {
         parser.require(XmlPullParser.START_TAG, ns, "z36");
+        int i =2;
         while (parser.next() != XmlPullParser.END_TAG) {
             if (parser.getEventType() != XmlPullParser.START_TAG) {
                 continue;
@@ -143,13 +149,16 @@ public class XMLParser {
             // Starts by looking for the z36 tag
             if (name.equals("z36-id")) {
                 livre.setNumero_etu(readz36id(parser));
+                parser.nextTag();
             }
-            if (name.equals("z36-due-date")) {
+            else if (name.equals("z36-due-date")) {
                 livre.setDate_retour(readz36dateretour(parser));
+                parser.nextTag();
             } else {
                 skip(parser);
             }
         }
+
         return livre;
     }
 

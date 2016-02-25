@@ -52,7 +52,7 @@ public class EmpruntsXML extends AppCompatActivity {
         TextView livreUser = (TextView)findViewById(R.id.Livre);
         livreUser.setText(livre.toString());
 
-        textUser.setOnClickListener(new View.OnClickListener()
+        livreUser.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
@@ -87,7 +87,7 @@ public class EmpruntsXML extends AppCompatActivity {
             }
         });
 
-        textUser.setOnLongClickListener(new View.OnLongClickListener()
+        livreUser.setOnLongClickListener(new View.OnLongClickListener()
                                         {
                                             @Override
                                             public boolean onLongClick(View v)

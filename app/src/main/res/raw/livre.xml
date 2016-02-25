@@ -1,8 +1,54 @@
-<?xml version = "1.0" encoding = "UTF-8"?>
+﻿<?xml version = "1.0" encoding = "UTF-8"?>
 <get-pat-loan>
     <reply-text>ok</reply-text>
     <reply-code>0000</reply-code>
     <loan renew="N">
+        <z36-sub-library-code>SEGMI</z36-sub-library-code>
+        <z36><translate-change-active-library>NAN51</translate-change-active-library>
+            <z36-doc-number>000555632</z36-doc-number>
+            <z36-item-sequence>000020</z36-item-sequence>
+            <z36-id>3589368</z36-id>
+            <z36-number>002265814</z36-number>
+            <z36-material>LIVRE</z36-material>
+            <z36-sub-library>BUFR SEGMI</z36-sub-library>
+            <z36-status>Active</z36-status>
+            <z36-loan-date>20160223</z36-loan-date>
+            <z36-loan-hour>1753</z36-loan-hour>
+            <z36-effective-due-date>00000000</z36-effective-due-date>
+            <z36-due-date>20160308</z36-due-date>
+            <z36-due-hour>1900</z36-due-hour>
+            <z36-returned-date>00000000</z36-returned-date>
+            <z36-returned-hour>0000</z36-returned-hour>
+            <z36-item-status>03</z36-item-status>
+            <z36-bor-status>Paris X - Etudiant Master (02)</z36-bor-status>
+            <z36-letter-number>0</z36-letter-number>
+            <z36-letter-date>00000000</z36-letter-date>
+            <z36-no-renewal>0</z36-no-renewal>
+            <z36-note-1></z36-note-1>
+            <z36-note-2></z36-note-2>
+            <z36-loan-cataloger-name>DASILVA</z36-loan-cataloger-name>
+            <z36-loan-cataloger-ip>10.25.132.5</z36-loan-cataloger-ip>
+            <z36-return-cataloger-name></z36-return-cataloger-name>
+            <z36-return-cataloger-ip></z36-return-cataloger-ip>
+            <z36-renew-cataloger-name></z36-renew-cataloger-name>
+            <z36-renew-cataloger-ip></z36-renew-cataloger-ip>
+            <z36-renew-mode></z36-renew-mode>
+            <z36-bor-type></z36-bor-type>
+            <z36-note-alpha></z36-note-alpha>
+            <z36-recall-date>00000000</z36-recall-date>
+            <z36-recall-due-date>00000000</z36-recall-due-date>
+            <z36-last-renew-date>00000000</z36-last-renew-date>
+            <z36-original-due-date>20160308</z36-original-due-date>
+            <z36-process-status></z36-process-status>
+            <z36-loan-type></z36-loan-type>
+            <z36-proxy-id></z36-proxy-id>
+            <z36-recall-type></z36-recall-type>
+            <z36-return-location></z36-return-location>
+            <z36-return-sub-location></z36-return-sub-location>
+            <z36-source></z36-source>
+            <z36-delivery-time></z36-delivery-time>
+            <z36-tail-time></z36-tail-time>
+        </z36>
         <z30-collection-code>SEGMI</z30-collection-code>
         <z30-item-status-code>03</z30-item-status-code>
         <z30-item-process-status-code></z30-item-process-status-code>
@@ -75,52 +121,6 @@
             <z30-maintenance-count>008</z30-maintenance-count>
             <z30-process-status-date>20140717</z30-process-status-date>
         </z30>
-        <z36-sub-library-code>SEGMI</z36-sub-library-code>
-        <z36><translate-change-active-library>NAN51</translate-change-active-library>
-            <z36-doc-number>000555632</z36-doc-number>
-            <z36-item-sequence>000020</z36-item-sequence>
-            <z36-id>3589368</z36-id>
-            <z36-number>002265814</z36-number>
-            <z36-material>LIVRE</z36-material>
-            <z36-sub-library>BUFR SEGMI</z36-sub-library>
-            <z36-status>Active</z36-status>
-            <z36-loan-date>20160223</z36-loan-date>
-            <z36-loan-hour>1753</z36-loan-hour>
-            <z36-effective-due-date>00000000</z36-effective-due-date>
-            <z36-due-date>20160308</z36-due-date>
-            <z36-due-hour>1900</z36-due-hour>
-            <z36-returned-date>00000000</z36-returned-date>
-            <z36-returned-hour>0000</z36-returned-hour>
-            <z36-item-status>03</z36-item-status>
-            <z36-bor-status>Paris X - Etudiant Master (02)</z36-bor-status>
-            <z36-letter-number>0</z36-letter-number>
-            <z36-letter-date>00000000</z36-letter-date>
-            <z36-no-renewal>0</z36-no-renewal>
-            <z36-note-1></z36-note-1>
-            <z36-note-2></z36-note-2>
-            <z36-loan-cataloger-name>DASILVA</z36-loan-cataloger-name>
-            <z36-loan-cataloger-ip>10.25.132.5</z36-loan-cataloger-ip>
-            <z36-return-cataloger-name></z36-return-cataloger-name>
-            <z36-return-cataloger-ip></z36-return-cataloger-ip>
-            <z36-renew-cataloger-name></z36-renew-cataloger-name>
-            <z36-renew-cataloger-ip></z36-renew-cataloger-ip>
-            <z36-renew-mode></z36-renew-mode>
-            <z36-bor-type></z36-bor-type>
-            <z36-note-alpha></z36-note-alpha>
-            <z36-recall-date>00000000</z36-recall-date>
-            <z36-recall-due-date>00000000</z36-recall-due-date>
-            <z36-last-renew-date>00000000</z36-last-renew-date>
-            <z36-original-due-date>20160308</z36-original-due-date>
-            <z36-process-status></z36-process-status>
-            <z36-loan-type></z36-loan-type>
-            <z36-proxy-id></z36-proxy-id>
-            <z36-recall-type></z36-recall-type>
-            <z36-return-location></z36-return-location>
-            <z36-return-sub-location></z36-return-sub-location>
-            <z36-source></z36-source>
-            <z36-delivery-time></z36-delivery-time>
-            <z36-tail-time></z36-tail-time>
-        </z36>
         <z13>
             <translate-change-active-library>NAN51</translate-change-active-library>
             <z13-doc-number>000555632</z13-doc-number>

@@ -55,11 +55,9 @@ public class Livre {
 
     @Override
     public String toString() {
-        return nom + " de " +
-                ", auteur='" + auteur + '\'' +
-                ", date_parution='" + date_parution + '\'' +
-                ", numero_etu='" + numero_etu + '\'' +
-                ", date_retour='" + date_retour + '\'' +
-                '}';
+        return nom + " de " +  auteur + "\n" +
+                " imprimé en " + date_parution + "\n" +
+                " emprunté par l'etudiant : " + numero_etu + "\n" +
+                " date de retour" + date_retour + "\n";
     }
 }
