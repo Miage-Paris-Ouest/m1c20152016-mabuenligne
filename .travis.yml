@@ -13,15 +13,12 @@ android:
   - android-23
   - extra-android-m2repository
   - sys-img-${ANDROID_ABI}-${ANDROID_TARGET}
-script:
-  - ./gradlew build assembleAndroidTest
     
 android:
   components:
     # Use the latest revision of Android SDK Tools
     - platform-tools
     - tools
-    
     
     # The BuildTools version used by the project
     - build-tools-23.0.1
@@ -36,8 +33,6 @@ android:
 
 before_install:
  - chmod +x gradlew
-
  
 script:
   - ./gradlew clean build
-
