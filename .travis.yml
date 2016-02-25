@@ -4,7 +4,7 @@ env:
   global:
     - ANDROID_TARGET=android-23
     - ANDROID_ABI=armeabi-v7a
-<<<<<<< HEAD
+
 android:
   components:
   - tools
@@ -15,7 +15,6 @@ android:
   - sys-img-${ANDROID_ABI}-${ANDROID_TARGET}
 script:
   - ./gradlew build assembleAndroidTest
-=======
     
 android:
   components:
@@ -34,14 +33,10 @@ android:
     - extra-android-m2repository
     - extra-google-m2repository
      - sys-img-${ANDROID_ABI}-${ANDROID_TARGET}
->>>>>>> origin/master
 
-
-<<<<<<< HEAD
-=======
 before_install:
  - chmod +x gradlew
  
 script:
   - ./gradlew clean build
->>>>>>> origin/master
+
