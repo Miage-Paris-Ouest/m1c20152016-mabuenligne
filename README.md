@@ -53,6 +53,11 @@ La bibliothèque universitaire souhaite intégrer la mobilité au sein de son pr
 
 ![](https://github.com/Miage-Paris-Ouest/m1c20152016-mabuenligne/blob/master/Dossier%20Fonctionnel/use_case.jpg?raw=true)
 
+### Diagramme de classe ###
+
+
+![](https://github.com/Miage-Paris-Ouest/m1c20152016-mabuenligne/blob/master/Dossier%20Fonctionnel/diagram_class.jpg?raw=true)
+
 ### Choix technique ###
 
 Développement mobile : Android
